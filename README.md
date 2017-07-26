@@ -1,7 +1,7 @@
 # Game-of-Thrones-Team
 
 # NOT:
-To show the web correctly you must use this extension `
+## To show the web correctly you must use this extension `
 ExtensionAllow-Control-Allow-Origin`
 ## User Stories
 
@@ -29,14 +29,14 @@ We encountered some problems that search by ID! not by actor name and this is no
 
 We request an actor name. The API returns name,gender,culture, house,an array of books and title.
 
-[Base URL]https://api.got.show/doc/
+[Base URL](https://api.got.show/doc/)
 
 ## Using The Movie DB api
 We request an actor name. And get the actual actor name.
-[Base URL] https://www.themoviedb.org/documentation/api
+[Base URL](https://www.themoviedb.org/documentation/api)
 
 ## Using MediaWiki (Wikipedia) api
 
 Get the actual name from the Movie DB api, and show the biography for the actor.
 
-[Base URL]https://www.mediawiki.org/wiki/API:Search
+[Base URL](https://www.mediawiki.org/wiki/API:Search)
