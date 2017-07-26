@@ -1,8 +1,7 @@
 # Game-of-Thrones-Team
 
 # NOT:
-## To show the web correctly you must use this extension `
-ExtensionAllow-Control-Allow-Origin`
+## To show the web correctly you must use this extension `ExtensionAllow-Control-Allow-Origin`
 ## User Stories
 
 We are developing a web app for a Game of Thrones series with the following requirements:
