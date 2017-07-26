@@ -28,16 +28,6 @@ function getFromGOT(name) {
 var characterInfo = {};
 // getFromGOT();
 
-/*
-  Name
-  Gender
-  Spouse
-  Culture
-  House
-  Books
-  Titles
- */
-
 var ids = [
    269623,
    466865,
@@ -56,7 +46,7 @@ var ids = [
 ];
 
 var characters = {};
-
+var realName = "";
 //Get Actor name From TMDB API
 function getFromTMDB(characterName, callback){
   ids.map(function(id){
@@ -66,6 +56,7 @@ function getFromTMDB(characterName, callback){
         var data = JSON.parse(xhr.responseText);
         data.cast.map(function(val){
           characters[val.character.trim().replace(/(voice)/g, "").trim().replace(/ /g,"").replace(/[()\']/g, "")] = val.name;
+          readName = val.name;
         });
       };
     };
@@ -83,23 +74,24 @@ function getFromTMDB(characterName, callback){
 
 // getFromTMDB("Bran Stark");
 
-// console.log(getFromGOT("Jon Snow"));
-// getFromGOT("Jon( Snow");
-
 // Get Actor description From Wiki media api
 function getFromWiki(realName) {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      console.log(xhr.responseText);
+      var data = JSON.parse(xhr.responseText);
+      console.log(data.query.search[0].snippet);
     }
   }
-  xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + realName, true);
+  xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + realName + "&format=json", true);
   xhr.send();
 }
+
 function process(fakeName){
   getFromGOT(fakeName);
-  getFromTMDB(fakeName, getFromWiki("JeromeFlynn"));
+  getFromTMDB(fakeName, getFromWiki("KitHarington"));
 }
+
+// getFromWiki("AidanGillen");
 
 process("Jon Snow");
