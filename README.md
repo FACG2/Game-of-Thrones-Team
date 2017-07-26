@@ -39,3 +39,5 @@ We request an actor name. And get the actual actor name.
 Get the actual name from the Movie DB api, and show the biography for the actor.
 
 [Base URL](https://www.mediawiki.org/wiki/API:Search)
+
+### [Open the website](https://facg2.github.io/Game-of-Thrones-Team/)
