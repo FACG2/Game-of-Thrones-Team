@@ -40,15 +40,10 @@ Get the actual name from the Movie DB api, and show the biography for the actor.
 
 [Base URL](https://www.mediawiki.org/wiki/API:Search)
 
-<<<<<<< HEAD
 
 ### To visit our website click [here](https://facg2.github.io/Game-of-Thrones-Team/)
 
 If you need to know the actor's name, you can visit this [website](http://www.hbo.com/game-of-thrones/cast-and-crew/index.html)
 
 Guess The Team :)
-=======
-### [Open the website](https://facg2.github.io/Game-of-Thrones-Team/)
 
-Guessing The Team
->>>>>>> f6aeaf118c96ea1283673f2ee593d90f2814cfef
